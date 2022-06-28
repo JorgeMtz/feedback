@@ -1,4 +1,4 @@
-import {FiX} from 'react-icons/fi'
+import {FaTimes} from 'react-icons/fa'
 import Card from "./shared/Card"
 
 const FeedbackItem = ({item, handleDelete}) => {
@@ -7,7 +7,7 @@ const FeedbackItem = ({item, handleDelete}) => {
         <Card reverse={false}>
             <div className="num-display">{item.rating}</div>
             <button onClick={() => handleDelete(item.id)} className="close">
-                <FiX color="white"/>
+                <FaTimes color="purple"/>
             </button>
             <div className="text-display">{item.text}</div>
         </Card>
