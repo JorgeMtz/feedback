@@ -1,5 +1,5 @@
 const FeedbackStats = ({feedback}) => {
-    let average = feedback.reduce((total, item) => total + item.rating, 0) / feedback.length;
+    let average = feedback.reduce((total, {rating}) => total + rating, 0) / feedback.length;
 
     average = average.toFixed(1).replace(/\.0$/, '');
 
